@@ -1,0 +1,36 @@
+body{
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	display: relative;
+	font-weight: 300;
+	color: black;
+	margin: 0;
+}
+
+h1{
+	font-weight: 400;
+}
+.chris{
+	border-radius: 100%;
+	height: 200px;
+	width: 200px;
+}
+#landing{
+	height:100vh;
+	text-align: center;
+	font-weight: 300;
+	background-image: url(https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=b3521961f1c136183ab054b5da920651);
+	background-size: cover;
+	color: white;
+}
+#features{
+	height: 100vh;
+	text-align: center;
+	padding: 10px;
+}
+.feature{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	height: 50vh;
+}
