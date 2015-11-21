@@ -3,12 +3,49 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  {{> navbar}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="navbar">
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li><a href="#">All</a></li>
+				<li><a href="#">Random</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Pics</a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container line">
+			<div class="row">
+				<div class="col-md-2">
+					<img class="logo" src="/images/reddit-logo.png">
+				</div>
+				<div class="col-md-8">
+					{{> tabs}}
+				</div>
+				<div class="col-md-2">
+					test
+				</div>
+			</div>
+		</div>
+	</header>
+</template>
+<template name="tabs">
+	<div class='tabContainer'>
+		<ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">hot</a></li>
+	    <li role="presentation"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">new</a></li>
+	    <li role="presentation"><a href="#rising" aria-controls="rising" role="tab" data-toggle="tab">rising</a></li>
+	  </ul>
+	</div>
+</template>
+<template name="home">
+	<div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="hot">Hot</div>
+	    <div role="tabpanel" class="tab-pane" id="new">New</div>
+	    <div role="tabpanel" class="tab-pane" id="rising">Rising</div>
+  	</div>
 </template>

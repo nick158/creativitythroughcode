@@ -1,1 +1,33 @@
 /* CSS declarations go here */
+header{
+	height: 60px;
+	width: 100vw;
+}
+.red{
+	background-color: red;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.right{
+	text-align: left;
+}
+.logo{
+	width: 150px;
+	margin-top: 5px;
+}
+.tabContainer{
+	position: relative;
+	height: 55px;
+}
+.nav-tabs{
+	position: absolute;
+	bottom: -1px;
+}
+.line{
+	border-bottom: 1px solid #DDDDDD;
+}
